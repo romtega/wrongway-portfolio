@@ -5,9 +5,6 @@ class PagesController < ApplicationController
   def profile
   end
 
-  def work
-  end
-
   def blog
   end
 
