@@ -12,13 +12,7 @@
 
   <body>
 
-    <div>
-      <div><%= link_to "Home", root_path %></div>
-      <div><%= link_to "Profile", profile_path %></div>
-      <div><%= link_to "Work", work_index_path %></div>
-      <div><%= link_to "Jazz", jazz_path %></div>
-      <div><%= link_to "Contact", contact_path %></div>
-    </div>
+    <%= render 'shared/nav' %>
 
     <%= yield %>
   </body>
