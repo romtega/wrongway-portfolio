@@ -73,14 +73,15 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+  padding: 2rem;
 }
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
+  padding: 2rem;
   font-weight: bold;
   color: rgba(255,255,255,.5);
   background-color: transparent;
-  border-bottom: .25rem solid transparent;
+  border-bottom: .15rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
@@ -89,7 +90,7 @@ body {
 }
 
 .nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
+  margin-left: .50rem;
 }
 
 .nav-masthead .active {
@@ -159,6 +160,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 42rem;
+    width: 100rem;
   }
 }
