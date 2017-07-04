@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome";
+
 
 /*
  * Globals
@@ -86,7 +88,7 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+  color: solid white;
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -94,8 +96,7 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+   border-top:1px solid white;
 }
 
 @media (min-width: 48em) {
@@ -163,3 +164,14 @@ body {
     width: 100rem;
   }
 }
+
+
+/*
+ * Social Links
+ */
+
+ .social-links a{
+  font-size: 1em;
+  padding: 2px;
+ }
+

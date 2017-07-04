@@ -1,12 +1,8 @@
 <div class="masthead clearfix">
   <div class="inner">
-    <h3 class="masthead-brand">Roman</h3>
+    <h3 class="masthead-brand"><%= link_to "Roman", root_path, class: 'nav-link' %></h3>
     <nav class="nav nav-masthead">
-      <%= link_to "Home", root_path, class: 'nav-link' %>
-      <%= link_to "Profile", profile_path, class: 'nav-link' %>
-      <%= link_to "Work", work_index_path, class: 'nav-link' %>
-      <%= link_to "Jazz", jazz_path, class: 'nav-link' %>
-      <%= link_to "Contact", contact_path, class: 'nav-link' %>          
+      <%= nav_helper %>        
     </nav>
   </div>
 </div>
