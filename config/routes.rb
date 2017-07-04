@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :jazz, controller: 'blogs'
   resources :work, controller: 'works'
 
   get 'jazz', to: 'pages#blog'
