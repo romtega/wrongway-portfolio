@@ -1,7 +1,7 @@
+<h1>Works</h1>
 
-
-Index Work
-
-
-        
-
+<% @works.each do |work| %>
+  <p><%= work.title %></p>
+  <p><%= work.subtitle %></p>
+  <%= image_tag work.thumb_image %>
+<% end %>

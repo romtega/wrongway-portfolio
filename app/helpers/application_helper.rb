@@ -15,7 +15,7 @@ module ApplicationHelper
         title: 'Profile'
       },
       {
-        url: work_index_path,
+        url: works_path,
         title: 'Work'
       },
       {

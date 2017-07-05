@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   resources :jazz, controller: 'blogs'
-  resources :work, controller: 'works'
+  resources :works, :path => "work"
 
   get 'jazz', to: 'pages#blog'
   get 'profile', to: 'pages#profile'

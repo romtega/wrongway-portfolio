@@ -6,8 +6,8 @@ module DefaultPageContent
   end
 
   def set_page_defaults
-    @page_title = "Roman Ortega Mondaca | Portfolio"
-    @seo_keywords = "Roman Ortega Mondaca Portfolio"
+    @page_title = "Roman | Portfolio"
+    @seo_keywords = "Roman Ortega Mondaca"
   end
 
 end

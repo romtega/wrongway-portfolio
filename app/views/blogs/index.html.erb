@@ -1,1 +1,6 @@
-this is the blog dedicated for jazz
+<h1>Jazz Blog</h1>
+<br>
+<%= @blogs.each do |blog| %>
+  <p><b><%= blog.title %></b></p>
+  <p><%= blog.body %></p>
+<% end %>

@@ -3,11 +3,10 @@ class PagesController < ApplicationController
   end
 
   def profile
-  end
-
-  def blog
+    @page_title = "Roman | Profile"
   end
 
   def contact
+    @page_title = "Roman | Contact Me"
   end
 end
