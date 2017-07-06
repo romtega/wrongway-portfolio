@@ -19,7 +19,7 @@ module ApplicationHelper
         title: 'Work'
       },
       {
-        url: jazz_index_path,
+        url: blogs_path,
         title: 'Jazz'
       },   
       {

@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   
-  resources :jazz, controller: 'blogs'
+  resources :blogs, :path => 'jazz'
   resources :works, :path => "work"
 
-  get 'jazz', to: 'pages#blog'
   get 'profile', to: 'pages#profile'
   get 'contact', to: 'pages#contact' 
 
