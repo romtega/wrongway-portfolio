@@ -24,6 +24,21 @@ class WorksController < ApplicationController
     end
   end
 
+  def edit
+    @works = Work.find(params[:id])
+  end
+
+  def update
+    @works = Work.find(params[:id])
+    respond_to do |format|
+      if @works.update(params.require(:work).permit(:title, :subtitle, :body))
+        format.html { redirect_to works_path, notice: 'Your work was successfully updated.' }
+      else
+        format.html { render :edit }
+      end
+    end
+  end
+
 end
 
 
