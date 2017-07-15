@@ -6,6 +6,7 @@ class WorksController < ApplicationController
   end
 
   def show
+    @works = Work.find(params[:id])
   end
 
   def new

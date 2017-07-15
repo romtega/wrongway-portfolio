@@ -1,7 +1,11 @@
 <h1>Works</h1>
 
+<%= link_to "New Work", new_work_path %>
+
 <% @works.each do |work| %>
-  <p><%= work.title %></p>
+  <p><%= link_to work.title, work_path(work) %></p>
   <p><%= work.subtitle %></p>
   <%= image_tag work.thumb_image unless work.thumb_image.nil? %>
+  <%= link_to "Edit", edit_work_path(work) %>
 <% end %>
+
