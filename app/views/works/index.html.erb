@@ -7,5 +7,6 @@
   <p><%= work.subtitle %></p>
   <%= image_tag work.thumb_image unless work.thumb_image.nil? %>
   <%= link_to "Edit", edit_work_path(work) %>
+  <%= link_to "Delete", work, method: :delete, data: { confirm: 'Are you sure?'} %>
 <% end %>
 

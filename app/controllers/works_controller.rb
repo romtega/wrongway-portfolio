@@ -40,6 +40,14 @@ class WorksController < ApplicationController
     end
   end
 
+  def destroy
+    @works = Work.find(params[:id])
+    @works.destroy
+    respond_to do |format|
+      format.html { redirect_to works_path, notice: 'This work was deleted.'}
+    end
+  end
+
 end
 
 
